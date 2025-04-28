@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aadugraamam - Empowering Women Farmers</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#8B6D3F',secondary:'#5A8D61'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Aadugraamam",
+    "url": "https://aadugraamam.com",
+    "logo": "https://aadugraamam.com/logo.jpg",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91 7418542979",
+      "contactType": "customer service"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2/252 Sugar Mill Road, Taluk, Ranganathapuram, Vanur, Tamil Nadu",
+      "addressLocality": "Villupuram",
+      "addressRegion": "Vanur",
+      "postalCode": "605109",
+      "addressCountry": "India"
+    }
+  }
+  </script>  
+
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Poppins', sans-serif;
+color: #333;
+}
+.hero-section {
+background-image: url('img1.jpg');
+background-size: cover;
+background-position: center;
+position: relative;
+}
+.hero-section::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: linear-gradient(90deg, rgba(242, 244, 222, 0.851) 100%, rgb(218, 222, 178, 0.741) 100%, rgba(255, 252, 241, 0.752) 100%);
+z-index: 1;
+}
+.hero-content {
+position: relative;
+z-index: 2;
+}
+.custom-input:focus {
+outline: none;
+border-color: #8B6D3F;
+}
+.custom-switch {
+position: relative;
+display: inline-block;
+width: 50px;
+height: 24px;
+}
+.custom-switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+transition: .4s;
+border-radius: 24px;
+}
+.slider:before {
+position: absolute;
+content: "";
+height: 18px;
+width: 18px;
+left: 3px;
+bottom: 3px;
+background-color: white;
+transition: .4s;
+border-radius: 50%;
+}
+input:checked + .slider {
+background-color: #8B6D3F;
+}
+input:checked + .slider:before {
+transform: translateX(26px);
+}
+</style>
+</head>
+<body class="bg-[#FBF9F6]">
+<!-- Header & Navigation -->
+<meta name="description" content="Aadugraamam empowers rural communities by promoting sustainable agriculture, crafts, and rural development. Explore our initiatives and products today.">
+<header class="w-full bg-transparent absolute top-0 left-0 right-0 z-10">
+<div class="container mx-auto px-6 py-4 flex justify-between items-center">
+<a href="#" class="flex items-center">
+<span class="text-3xl font-['Pacifico'] text-primary">Aadugraamam</span>
+</a>
+<nav class="hidden md:flex space-x-8">
+<a href="#" class="text-[#5A4A2F] hover:text-primary font-medium transition">Home</a>
+<a href="#about" class="text-[#5A4A2F] hover:text-primary font-medium transition">About Us</a>
+<a href="#services" class="text-[#5A4A2F] hover:text-primary font-medium transition">Services</a>
+<a href="#contact" class="text-[#5A4A2F] hover:text-primary font-medium transition">Contact</a>
+</nav>
+<div class="md:hidden flex items-center">
+<button class="w-10 h-10 flex items-center justify-center text-primary">
+<i class="ri-menu-line ri-lg"></i>
+</button>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<meta name="keywords" content="Aadugraamam, rural development, sustainable agriculture, rural empowerment, eco-friendly products, rural crafts, organic farming, community initiatives">
+<section class="hero-section min-h-screen flex items-center">
+<div class="container mx-auto px-6 w-full hero-content">
+<div class="max-w-2xl py-20 md:py-32">
+<div class="flex items-center mb-4">
+<span class="text-2xl mr-2"></span>
+<h1 class="text-4xl md:text-5xl font-bold text-primary">Welcome to Aadugraamam</h1>
+<span class="text-2xl ml-2"></span>
+</div>
+<h2 class="text-xl md:text-2xl font-medium text-secondary mb-6">India's First Women-Led Goat Breeding Startup</h2>
+<p class="text-gray-700 mb-8 text-lg">
+Pioneering rural transformation through innovative goat breeding and rearing practices. As India's first women-focused livestock startup, we empower rural women with expert breeding techniques, sustainable farm management, and specialized consultations - creating a new generation of successful agripreneurs.
+</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a href="#contact" class="bg-primary text-white px-8 py-3 rounded-button font-medium hover:bg-opacity-90 transition shadow-md whitespace-nowrap flex items-center justify-center">
+Join Our Movement
+</a>
+<a href="#services" class="border-2 border-primary text-primary px-8 py-3 rounded-button font-medium hover:bg-primary hover:text-white transition whitespace-nowrap flex items-center justify-center">
+Explore Services
+</a>
+</div>
+</div>
+</div>
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Aadugraamam | Empowering Rural Communities">
+  <meta property="og:description" content="Aadugraamam promotes sustainable solutions for rural communities, focusing on agriculture, crafts, and empowerment. Join us in making a difference.">
+  <meta property="og:image" content="https://aadugraamam.com/images/og-image.jpg">
+  <meta property="og:url" content="https://aadugraamam.com">
+  <meta property="og:type" content="website">
+</section>
+<!-- Core Values Section -->
+<section id="about" class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Our Core Values</h2>
+<p class="text-gray-600 max-w-3xl mx-auto">Building India's first women-led goat breeding revolution through our foundational pillars of excellence.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Women Empowerment -->
+<div class="bg-[#F8F5F0] p-8 rounded shadow-md hover:shadow-lg transition group">
+<div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform">
+<i class="ri-women-line ri-2x text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-primary mb-4 text-center">Women Leadership</h3>
+<div class="space-y-3">
+<p class="text-gray-600">
+Empowering rural women to become successful goat breeding entrepreneurs through:
+</p>
+<ul class="text-gray-600 text-left space-y-2">
+<li class="flex items-start">
+<i class="ri-checkbox-circle-line text-primary mt-1 mr-2 flex-shrink-0"></i>
+<span>Comprehensive breeding expertise training</span>
+</li>
+<li class="flex items-start">
+<i class="ri-checkbox-circle-line text-primary mt-1 mr-2 flex-shrink-0"></i>
+<span>Financial literacy and business management</span>
+</li>
+<li class="flex items-start">
+<i class="ri-checkbox-circle-line text-primary mt-1 mr-2 flex-shrink-0"></i>
+<span>Leadership development programs</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Breeding Excellence -->
+<div class="bg-[#F8F5F0] p-8 rounded shadow-md hover:shadow-lg transition group">
+<div class="w-16 h-16 bg-secondary bg-opacity-10 rounded-full flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform">
+<i class="ri-seedling-line ri-2x text-secondary"></i>
+</div>
+<h3 class="text-xl font-semibold text-secondary mb-4 text-center">Breeding Excellence</h3>
+<div class="space-y-3">
+<p class="text-gray-600">
+Setting new standards in goat breeding through innovative practices:
+</p>
+<ul class="text-gray-600 text-left space-y-2">
+<li class="flex items-start">
+<i class="ri-checkbox-circle-line text-secondary mt-1 mr-2 flex-shrink-0"></i>
+<span>Superior breed selection and development</span>
+</li>
+<li class="flex items-start">
+<i class="ri-checkbox-circle-line text-secondary mt-1 mr-2 flex-shrink-0"></i>
+<span>Scientific breeding methodologies</span>
+</li>
+<li class="flex items-start">
+<i class="ri-checkbox-circle-line text-secondary mt-1 mr-2 flex-shrink-0"></i>
+<span>Quality genetics management</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Sustainable Impact -->
+<div class="bg-[#F8F5F0] p-8 rounded shadow-md hover:shadow-lg transition group">
+<div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform">
+<i class="ri-hand-heart-line ri-2x text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-primary mb-4 text-center">Sustainable Impact</h3>
+<div class="space-y-3">
+<p class="text-gray-600">
+Creating lasting positive change in rural communities through:
+</p>
+<ul class="text-gray-600 text-left space-y-2">
+<li class="flex items-start">
+<i class="ri-checkbox-circle-line text-primary mt-1 mr-2 flex-shrink-0"></i>
+<span>Economic empowerment initiatives</span>
+</li>
+<li class="flex items-start">
+<i class="ri-checkbox-circle-line text-primary mt-1 mr-2 flex-shrink-0"></i>
+<span>Environmental-friendly practices</span>
+</li>
+<li class="flex items-start">
+<i class="ri-checkbox-circle-line text-primary mt-1 mr-2 flex-shrink-0"></i>
+<span>Community development programs</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Specialized Consultation Feature -->
+<section id="services" class="py-20 bg-[#F5F2EC]">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Specialized Consultation Services</h2>
+<p class="text-gray-600 max-w-3xl mx-auto">Expert guidance and innovative solutions tailored for women farmers, combining traditional wisdom with modern efficiency.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<div class="h-48 relative">
+<img src="https://readdy.ai/api/search-image?query=Modern%20permanent%20goat%20shed%20structure%20with%20sustainable%20materials%2C%20well-lit%20interior%2C%20spacious%20design%2C%20professional%20farm%20equipment%2C%20clean%20and%20organized%2C%20high%20quality%20architectural%20photography%20with%20natural%20lighting&width=600&height=400&seq=5&orientation=landscape" alt="Permanent Structures" class="w-full h-full object-cover object-top">
+<div class="absolute inset-0 bg-primary bg-opacity-10"></div>
+</div>
+<div class="p-6">
+<div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-home-4-line ri-lg text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-primary mb-3">Permanent Structures</h3>
+<p class="text-gray-600 mb-4">Durable, well-ventilated permanent goat sheds designed for optimal animal health and easy maintenance.</p>
+<ul class="space-y-2">
+<li class="flex items-center text-sm text-gray-600">
+<i class="ri-checkbox-circle-line text-primary mr-2"></i>
+<span>Climate-controlled environment</span>
+</li>
+<li class="flex items-center text-sm text-gray-600">
+<i class="ri-checkbox-circle-line text-primary mr-2"></i>
+<span>Easy cleaning systems</span>
+</li>
+<li class="flex items-center text-sm text-gray-600">
+<i class="ri-checkbox-circle-line text-primary mr-2"></i>
+<span>Integrated feed storage</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<div class="h-48 relative">
+<img src="https://readdy.ai/api/search-image?query=Portable%20goat%20shed%20with%20wheels%20and%20innovative%20design%2C%20lightweight%20materials%2C%20easy%20to%20move%2C%20perfect%20for%20small-scale%20farming%2C%20practical%20and%20efficient%2C%20high%20quality%20product%20photography%20with%20natural%20lighting&width=600&height=400&seq=6&orientation=landscape" alt="Mobile Solutions" class="w-full h-full object-cover object-top">
+<div class="absolute inset-0 bg-secondary bg-opacity-10"></div>
+</div>
+<div class="p-6">
+<div class="w-12 h-12 bg-secondary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-truck-line ri-lg text-secondary"></i>
+</div>
+<h3 class="text-xl font-semibold text-secondary mb-3">Mobile Solutions</h3>
+<p class="text-gray-600 mb-4">Innovative portable sheds that can be easily moved and adapted to different locations and needs.</p>
+<ul class="space-y-2">
+<li class="flex items-center text-sm text-gray-600">
+<i class="ri-checkbox-circle-line text-secondary mr-2"></i>
+<span>Lightweight construction</span>
+</li>
+<li class="flex items-center text-sm text-gray-600">
+<i class="ri-checkbox-circle-line text-secondary mr-2"></i>
+<span>Quick assembly/disassembly</span>
+</li>
+<li class="flex items-center text-sm text-gray-600">
+<i class="ri-checkbox-circle-line text-secondary mr-2"></i>
+<span>Weather-resistant materials</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<div class="h-48 relative">
+<img src="https://readdy.ai/api/search-image?query=Indian%20female%20agricultural%20expert%20in%20traditional%20saree%20consulting%20with%20rural%20Indian%20women%20farmers%2C%20discussing%20farming%20plans%20in%20village%20community%20center%2C%20warm%20natural%20lighting%2C%20authentic%20Indian%20rural%20setting%2C%20professional%20yet%20traditional%20atmosphere%2C%20high%20quality%20candid%20photography&width=600&height=400&seq=7&orientation=landscape" alt="Expert Guidance" class="w-full h-full object-cover object-top">
+<div class="absolute inset-0 bg-primary bg-opacity-10"></div>
+</div>
+<div class="p-6">
+<div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-customer-service-2-line ri-lg text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-primary mb-3">Expert Guidance</h3>
+<p class="text-gray-600 mb-4">Comprehensive consultation services to help you choose and implement the best solutions for your farm.</p>
+<ul class="space-y-2">
+<li class="flex items-center text-sm text-gray-600">
+<i class="ri-checkbox-circle-line text-primary mr-2"></i>
+<span>Site assessment</span>
+</li>
+<li class="flex items-center text-sm text-gray-600">
+<i class="ri-checkbox-circle-line text-primary mr-2"></i>
+<span>Custom design plans</span>
+</li>
+<li class="flex items-center text-sm text-gray-600">
+<i class="ri-checkbox-circle-line text-primary mr-2"></i>
+<span>Implementation support</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="mt-16 bg-white p-8 rounded-lg shadow-md">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+<div>
+<h3 class="text-2xl font-bold text-primary mb-4">Why Choose Our Consultation Services?</h3>
+<p class="text-gray-600 mb-6">Our expert team combines years of experience with innovative solutions to create the perfect environment for your goat farming success.</p>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mr-3">
+<i class="ri-women-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-800">Women-Centric</h4>
+<p class="text-sm text-gray-600">Designed for women farmers' needs</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mr-3">
+<i class="ri-recycle-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-800">Sustainable</h4>
+<p class="text-sm text-gray-600">Eco-friendly materials</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mr-3">
+<i class="ri-tools-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-800">Adaptable</h4>
+<p class="text-sm text-gray-600">Flexible to your needs</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mr-3">
+<i class="ri-shield-check-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-800">Quality</h4>
+<p class="text-sm text-gray-600">Built to last longer</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<img src="https://readdy.ai/api/search-image?query=Indian%20female%20agricultural%20expert%20in%20traditional%20saree%20consulting%20with%20rural%20Indian%20women%20farmers%20in%20village%20setting%2C%20discussing%20farming%20plans%20and%20documents%2C%20warm%20natural%20lighting%2C%20authentic%20rural%20Indian%20environment%2C%20professional%20yet%20traditional%20consultation%20atmosphere%2C%20high%20quality%20candid%20photography%20showing%20cultural%20elements&width=600&height=400&seq=8&orientation=landscape" alt="Consultation Process" class="rounded-lg shadow-md w-full h-full object-cover object-top">
+<div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
+</div>
+</div>
+</div>
+<div class="mt-12 text-center">
+<a href="#contact" class="inline-flex items-center bg-primary text-white px-8 py-3 rounded-button font-medium hover:bg-opacity-90 transition shadow-md whitespace-nowrap">
+<span>Schedule a Consultation</span>
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+</div>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</section>
+<!-- Goat Farming Support Section -->
+<!-- Goat Farming Support Section -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Goat Farming Support</h2>
+        <p class="text-gray-600 max-w-3xl mx-auto">We provide comprehensive support to help women farmers manage their goat farms through expert guidance and sustainable practices.</p>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+        <div class="relative">
+          <img src="https://readdy.ai/api/search-image?query=Rural%20Indian%20woman%20farmer%20in%20traditional%20attire%20caring%20for%20her%20goats%20in%20a%20well-maintained%20farm%20setting%2C%20clean%20environment%2C%20modern%20farming%20practices%2C%20natural%20lighting%2C%20authentic%20rural%20scene&width=600&height=400&seq=9&orientation=landscape" alt="Goat Farming" class="rounded-lg shadow-md w-full">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
+        </div>
+        <div>
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+                <i class="ri-heart-line text-primary ri-lg"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-primary mb-2">Animal Health Care</h3>
+                <p class="text-gray-600">Regular health check-ups and preventive care to maintain the well-being of your goats.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+                <i class="ri-leaf-line text-primary ri-lg"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-primary mb-2">Feed Management</h3>
+                <p class="text-gray-600">Guidance on nutritional requirements and sustainable feeding practices for optimal growth.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+                <i class="ri-book-open-line text-primary ri-lg"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-primary mb-2">Training Programs</h3>
+                <p class="text-gray-600">Regular workshops and training sessions on best farming practices and animal care.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-[#F8F5F0] p-6 rounded shadow-md">
+          <div class="flex items-center justify-between mb-4">
+            <h4 class="font-semibold text-primary">Breed Management</h4>
+            <i class="ri-shield-star-line text-primary ri-lg"></i>
+          </div>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-center">
+              <i class="ri-checkbox-circle-line text-primary mr-2"></i>
+              <span>Breed Selection</span>
+            </li>
+            <li class="flex items-center">
+              <i class="ri-checkbox-circle-line text-primary mr-2"></i>
+              <span>Breeding Cycles</span>
+            </li>
+            <li class="flex items-center">
+              <i class="ri-checkbox-circle-line text-primary mr-2"></i>
+              <span>Health Records</span>
+            </li>
+            <li class="flex items-center">
+              <i class="ri-checkbox-circle-line text-primary mr-2"></i>
+              <span>Growth Monitoring</span>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-[#F8F5F0] p-6 rounded shadow-md">
+          <div class="flex items-center justify-between mb-4">
+            <h4 class="font-semibold text-primary">Farm Management</h4>
+            <i class="ri-home-gear-line text-primary ri-lg"></i>
+          </div>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-center">
+              <i class="ri-checkbox-circle-line text-primary mr-2"></i>
+              <span>Space Planning</span>
+            </li>
+            <li class="flex items-center">
+              <i class="ri-checkbox-circle-line text-primary mr-2"></i>
+              <span>Waste Management</span>
+            </li>
+            <li class="flex items-center">
+              <i class="ri-checkbox-circle-line text-primary mr-2"></i>
+              <span>Resource Optimization</span>
+            </li>
+            <li class="flex items-center">
+              <i class="ri-checkbox-circle-line text-primary mr-2"></i>
+              <span>Record Keeping</span>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-[#F8F5F0] p-6 rounded shadow-md">
+          <div class="flex items-center justify-between mb-4">
+            <h4 class="font-semibold text-primary">Knowledge Support</h4>
+            <i class="ri-book-read-line text-primary ri-lg"></i>
+          </div>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-center">
+              <i class="ri-checkbox-circle-line text-primary mr-2"></i>
+              <span>Regular Workshops</span>
+            </li>
+            <li class="flex items-center">
+              <i class="ri-checkbox-circle-line text-primary mr-2"></i>
+              <span>Best Practices</span>
+            </li>
+            <li class="flex items-center">
+              <i class="ri-checkbox-circle-line text-primary mr-2"></i>
+              <span>Disease Prevention</span>
+            </li>
+            <li class="flex items-center">
+              <i class="ri-checkbox-circle-line text-primary mr-2"></i>
+              <span>Community Learning</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Marketing Through Aadugraamam Brand Section -->
+<section class="py-20 bg-[#F8F5F0]">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Marketing Through Aadugraamam Brand</h2>
+<p class="text-gray-600 max-w-3xl mx-auto">Premium quality goat products marketed under the trusted Aadugraamam brand name, ensuring fair prices and sustainable market access for our farmers.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+<div class="relative">
+<img src="logo.png" alt="Aadugraamam Products" class="rounded-lg shadow-md w-full">
+<div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
+</div>
+<div class="space-y-8">
+<div class="bg-white p-6 rounded-lg shadow-sm">
+<div class="flex items-start">
+<div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+<i class="ri-store-2-line text-primary ri-lg"></i>
+</div>
+<div>
+<h4 class="text-lg font-semibold text-primary mb-3">Market Access</h4>
+<ul class="space-y-2 text-gray-600">
+<li class="flex items-center">
+<i class="ri-check-line text-primary mr-2"></i>
+<span>Direct market connections</span>
+</li>
+<li class="flex items-center">
+<i class="ri-check-line text-primary mr-2"></i>
+<span>Fair price assurance</span>
+</li>
+<li class="flex items-center">
+<i class="ri-check-line text-primary mr-2"></i>
+<span>Quality certification</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm">
+<div class="flex items-start">
+<div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+<i class="ri-award-line text-primary ri-lg"></i>
+</div>
+<div>
+<h4 class="text-lg font-semibold text-primary mb-3">Value-Added Products</h4>
+<ul class="space-y-2 text-gray-600">
+<li class="flex items-center">
+<i class="ri-check-line text-primary mr-2"></i>
+<span>Premium meat products</span>
+</li>
+<li class="flex items-center">
+<i class="ri-check-line text-primary mr-2"></i>
+<span>Organic fertilizers</span>
+</li>
+<li class="flex items-center">
+<i class="ri-check-line text-primary mr-2"></i>
+<span>Dairy products</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm">
+<div class="flex items-start">
+<div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+<i class="ri-shield-star-line text-primary ri-lg"></i>
+</div>
+<div>
+<h4 class="text-lg font-semibold text-primary mb-3">Brand Benefits</h4>
+<ul class="space-y-2 text-gray-600">
+<li class="flex items-center">
+<i class="ri-check-line text-primary mr-2"></i>
+<span>Brand recognition</span>
+</li>
+<li class="flex items-center">
+<i class="ri-check-line text-primary mr-2"></i>
+<span>Marketing support</span>
+</li>
+<li class="flex items-center">
+<i class="ri-check-line text-primary mr-2"></i>
+<span>Premium pricing</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</section>
+<!-- Our Promise Section -->
+<section class="py-20 bg-[#F5F2EC]">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Our Promise</h2>
+<p class="text-gray-600 max-w-3xl mx-auto">When you partner with Aadugramam, we commit to supporting you every step of the way.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Promise 1 -->
+<div class="bg-[#F8F5F0] p-8 rounded shadow-md hover:shadow-lg transition">
+<div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6 mx-auto">
+<i class="ri-home-gear-line ri-2x text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-primary mb-4 text-center">Mobile Goat Sheds</h3>
+<p class="text-gray-600 text-center">
+Tailored for ease of use and mobility, our shed designs adapt to your specific farming needs and space constraints.
+</p>
+</div>
+<!-- Promise 2 -->
+<div class="bg-[#F8F5F0] p-8 rounded shadow-md hover:shadow-lg transition">
+<div class="w-16 h-16 bg-secondary bg-opacity-10 rounded-full flex items-center justify-center mb-6 mx-auto">
+<i class="ri-heart-pulse-line ri-2x text-secondary"></i>
+</div>
+<h3 class="text-xl font-semibold text-secondary mb-4 text-center">Veterinary Support</h3>
+<p class="text-gray-600 text-center">
+Comprehensive veterinary care and feed management solutions to keep your livestock healthy and productive.
+</p>
+</div>
+<!-- Promise 3 -->
+<div class="bg-[#F8F5F0] p-8 rounded shadow-md hover:shadow-lg transition">
+<div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6 mx-auto">
+<i class="ri-team-line ri-2x text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-primary mb-4 text-center">Continuous Mentorship</h3>
+<p class="text-gray-600 text-center">
+Ongoing guidance and support for farm management, ensuring you never have to face challenges alone.
+</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<div class="bg-primary bg-opacity-10 rounded-lg p-10 md:p-16 text-center relative overflow-hidden">
+<div class="absolute inset-0 opacity-10">
+<img src="https://readdy.ai/api/search-image?query=Abstract%20pattern%20of%20traditional%20Indian%20rangoli%20designs%2C%20subtle%20and%20elegant%2C%20earthy%20tones%2C%20perfect%20for%20background%20usage%2C%20soft%20and%20minimal&width=1200&height=600&seq=10&orientation=landscape" alt="Background Pattern" class="w-full h-full object-cover">
+</div>
+<div class="relative z-10">
+<h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">Join the Aadugraamam Movement</h2>
+<p class="text-gray-700 text-lg mb-8 max-w-3xl mx-auto">
+Where women lead, farms flourish, and dreams grow stronger. Join Aadugraamam's network of successful women farmers and access premium markets today.
+</p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<a href="#contact" class="inline-flex items-center bg-primary text-white px-8 py-3 rounded-button font-medium hover:bg-opacity-90 transition shadow-md whitespace-nowrap">
+<i class="ri-user-add-line mr-2"></i>
+<span>Join Our Network</span>
+</a>
+<a href="#services" class="inline-flex items-center bg-white text-primary px-8 py-3 rounded-button font-medium hover:bg-opacity-90 transition shadow-md whitespace-nowrap">
+<i class="ri-store-3-line mr-2"></i>
+<span>Explore Markets</span>
+</a>
+</div>
+<span class="mr-2">Reach out to us today</span>
+<span class="text-xl">👉</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-[#F5F2EC]">
+  <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div>
+              <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">Start Your Journey With Us</h2>
+              <p class="text-gray-700 mb-8">
+                  Ready to transform your farming practices and empower your community? Fill out the form and our team will get back to you within 24 hours.
+              </p>
+              <div class="space-y-6">
+                  <div class="flex items-start">
+                      <div class="w-10 h-10 flex items-center justify-center text-primary mr-4 mt-1">
+                          <i class="ri-map-pin-line ri-lg"></i>
+                      </div>
+                      <div>
+                          <h3 class="font-semibold text-gray-800">Our Location</h3>
+                          <p class="text-gray-600">2/252 Sugar Mill Road, Taluk, Ramanathapuram, Vanur, Tamil Nadu 605109</p>
+                      </div>
+                  </div>
+                  <div class="flex items-start">
+                      <div class="w-10 h-10 flex items-center justify-center text-primary mr-4 mt-1">
+                          <i class="ri-phone-line ri-lg"></i>
+                      </div>
+                      <div>
+                          <h3 class="font-semibold text-gray-800">Phone Number</h3>
+                          <p class="text-gray-600">+91 7418542979</p>
+                      </div>
+                  </div>
+                  <div class="flex items-start">
+                      <div class="w-10 h-10 flex items-center justify-center text-primary mr-4 mt-1">
+                          <i class="ri-mail-line ri-lg"></i>
+                      </div>
+                      <div>
+                          <h3 class="font-semibold text-gray-800">Email Address</h3>
+                          <p class="text-gray-600">info@aadugraamam.com</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="bg-white p-8 rounded shadow-md">
+              <!-- Updated Form Tag -->
+              <form action="https://formspree.io/f/xgvkvgvr" method="POST">
+                  <div class="mb-6">
+                      <label for="name" class="block text-gray-700 mb-2">Full Name</label>
+                      <input type="text" id="name" name="fullName" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary custom-input" placeholder="Your name" required>
+                  </div>
+                  <div class="mb-6">
+                      <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+                      <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary custom-input" placeholder="Your email" required>
+                  </div>
+                  <div class="mb-6">
+                      <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
+                      <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary custom-input" placeholder="Your phone number" required>
+                  </div>
+                  <div class="mb-6">
+                      <label for="service" class="block text-gray-700 mb-2">Service Interested In</label>
+                      <div class="relative">
+                          <select id="service" name="service" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary appearance-none pr-8 custom-input">
+                              <option value="">Select a service</option>
+                              <option value="goat-shed">Goat Shed Consultation</option>
+                              <option value="training">Farming Training</option>
+                              <option value="veterinary">Veterinary Support</option>
+                              <option value="mentorship">Ongoing Mentorship</option>
+                          </select>
+                          <div class="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
+                              <i class="ri-arrow-down-s-line text-gray-500"></i>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="mb-6">
+                      <label for="message" class="block text-gray-700 mb-2">Your Message</label>
+                      <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary custom-input" placeholder="Tell us about your farming needs" required></textarea>
+                  </div>
+                  <div class="mb-6 flex items-center">
+                      <label class="custom-switch mr-3">
+                          <input type="checkbox" name="newsletter">
+                          <span class="slider"></span>
+                      </label>
+                      <span class="text-gray-700">Subscribe to our newsletter</span>
+                  </div>
+                  <button type="submit" class="w-full bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-opacity-90 transition shadow-md whitespace-nowrap">
+                      Send Message
+                  </button>
+              </form>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#3A2E1C] text-white py-12">
+<div class="container mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div>
+<a href="#" class="text-3xl font-['Pacifico'] text-white mb-4 inline-block">Aadugraamam</a>
+<p class="text-gray-300 mb-6">
+Empowering women farmers through sustainable practices and expert guidance.
+</p>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-20 rounded-full hover:bg-opacity-30 transition">
+<i class="ri-facebook-fill text-white"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-20 rounded-full hover:bg-opacity-30 transition">
+<i class="ri-twitter-fill text-white"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-20 rounded-full hover:bg-opacity-30 transition">
+<i class="ri-instagram-line text-white"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-20 rounded-full hover:bg-opacity-30 transition">
+<i class="ri-youtube-line text-white"></i>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-300 hover:text-white transition">Home</a></li>
+<li><a href="#about" class="text-gray-300 hover:text-white transition">About Us</a></li>
+<li><a href="#services" class="text-gray-300 hover:text-white transition">Services</a></li>
+<li><a href="#contact" class="text-gray-300 hover:text-white transition">Contact</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white transition">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-4">Our Services</h3>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-300 hover:text-white transition">Goat Shed Consultation</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white transition">Farming Training</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white transition">Veterinary Support</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white transition">Feed Management</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white transition">Ongoing Mentorship</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-4">Newsletter</h3>
+<p class="text-gray-300 mb-4">
+Subscribe to our newsletter for the latest updates and farming tips.
+</p>
+<form class="flex">
+<input type="email" placeholder="Your email address" class="px-4 py-2 w-full rounded-l border-none text-gray-800 text-sm">
+<button type="submit" class="bg-primary px-4 py-2 rounded-r text-white hover:bg-opacity-90 transition whitespace-nowrap">
+Subscribe
+</button>
+</form>
+</div>
+</div>
+<div class="border-t border-gray-700 mt-12 pt-8 text-center">
+<p class="text-gray-400">© 2025 Aadugraamam. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+// Mobile menu toggle functionality
+const menuButton = document.querySelector('.ri-menu-line').parentElement;
+const nav = document.querySelector('nav');
+menuButton.addEventListener('click', function() {
+if (nav.classList.contains('hidden')) {
+nav.classList.remove('hidden');
+nav.classList.add('flex', 'flex-col', 'absolute', 'top-16', 'right-6', 'bg-white', 'p-4', 'rounded', 'shadow-lg', 'space-y-4', 'z-20');
+menuButton.querySelector('i').classList.remove('ri-menu-line');
+menuButton.querySelector('i').classList.add('ri-close-line');
+} else {
+nav.classList.add('hidden');
+nav.classList.remove('flex', 'flex-col', 'absolute', 'top-16', 'right-6', 'bg-white', 'p-4', 'rounded', 'shadow-lg', 'space-y-4', 'z-20');
+menuButton.querySelector('i').classList.add('ri-menu-line');
+menuButton.querySelector('i').classList.remove('ri-close-line');
+}
+});
+});
+</script>
+</body>
+</html>
